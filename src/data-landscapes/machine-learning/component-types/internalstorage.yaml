@@ -1,0 +1,11 @@
+apiVersion: witboost.com/v2
+kind: ComponentType
+metadata:
+  name: internalstorage
+  displayName: Internal Storage
+  descriptor: Storage infrastructure dedicated to storing data, models, configurations, and other resources used within a sandbox
+spec:
+  resourceTypeId: internalstorage
+  partOfSystem: systemtype:default/mlsandbox
+  consumable: false
+  shoppable: false

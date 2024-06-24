@@ -1,0 +1,10 @@
+apiVersion: witboost.com/v2
+kind: SystemType
+metadata:
+  name: dataproduct
+  displayName: Data Product
+  description: A data product is a set of data and related assets that are designed, developed, and managed to provide specific value to its users. It is treated as a product with its own lifecycle, from inception and development to deployment and maintenance
+spec:
+  resourceTypeId: dataproduct
+  belongsTo: taxonomy:default/data-mesh
+  partOfDomain: domaintype:default/business-domain

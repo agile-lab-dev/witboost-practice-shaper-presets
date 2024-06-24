@@ -1,0 +1,11 @@
+apiVersion: witboost.com/v2
+kind: ComponentType
+metadata:
+  name: storage
+  displayName: Storage
+  description: Infrastructure used to store and manage the data that forms the foundation of data products within an organization
+spec:
+  resourceTypeId: storage
+  partOfSystem: systemtype:default/dataproduct
+  consumable: false
+  shoppable: false

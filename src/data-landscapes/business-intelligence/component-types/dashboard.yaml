@@ -1,0 +1,15 @@
+apiVersion: witboost.com/v2
+kind: ComponentType
+metadata:
+  name: dashboard
+  displayName: Dashboard
+  description: Visual representation of key performance indicators (KPIs), metrics, and data points that provide an overview of an organization's performance and help stakeholders make informed decisions
+spec:
+  resourceTypeId: dashboard
+  partOfSystem: systemtype:default/biproject
+  consumable: true
+  shoppable: true
+  readsFrom:
+    - componenttype:default/consumerview
+    # Enable if Data Mesh is registered
+    # - componenttype:default/outputport

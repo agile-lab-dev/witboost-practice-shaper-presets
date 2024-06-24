@@ -1,0 +1,8 @@
+apiVersion: witboost.com/v2
+kind: DomainType
+metadata:
+  name: business-domain
+  displayName: Business Domain
+  description: A business domain refers to a distinct area of expertise or activity within an organization, encompassing a specific set of business processes, rules, and knowledge. It represents a particular aspect of the business, focusing on specific goals, functions, and outcomes
+spec:
+  partOfDomain: domaintype:default/business-domain

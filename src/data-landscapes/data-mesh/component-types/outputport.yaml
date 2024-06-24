@@ -1,0 +1,11 @@
+apiVersion: witboost.com/v2
+kind: ComponentType
+metadata:
+  name: outputport
+  displayName: Output Port
+  description: Interface through which the data from a data product is delivered to users, applications, or other systems
+spec:
+  resourceTypeId: outputport
+  partOfSystem: systemtype:default/dataproduct
+  consumable: true
+  shoppable: true

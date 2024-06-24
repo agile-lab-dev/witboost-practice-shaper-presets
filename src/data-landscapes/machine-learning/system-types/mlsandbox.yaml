@@ -1,0 +1,10 @@
+apiVersion: witboost.com/v2
+kind: SystemType
+metadata:
+  name: mlsandbox
+  displayName: ML Sandbox
+  description: Isolated environment where data scientists and machine learning engineers can experiment, develop, and test machine learning models without affecting live systems or production data
+spec:
+  resourceTypeId: mlsandbox
+  belongsTo: taxonomy:default/machine-learning
+  partOfDomain: domaintype:default/department

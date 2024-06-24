@@ -1,0 +1,8 @@
+apiVersion: witboost.com/v2
+kind: Taxonomy
+metadata:
+  name: business-intelligence
+  displayName: BI
+  description: Entity representing the Business Intelligence data landscape
+spec:
+  enabled: true
