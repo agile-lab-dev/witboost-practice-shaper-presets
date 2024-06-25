@@ -6,6 +6,6 @@ metadata:
   description: Interface through which the data from a data product is delivered to users, applications, or other systems
 spec:
   resourceTypeId: outputport
-  partOfSystem: systemtype:default/dataproduct4
+  partOfSystem: systemtype:default/dataproduct
   consumable: true
   shoppable: true
