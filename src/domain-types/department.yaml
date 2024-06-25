@@ -1,8 +1,0 @@
-apiVersion: witboost.com/v2
-kind: DomainType
-metadata:
-  name: department
-  displayName: Department
-  description: A department refers to a distinct functional unit within an organization, typically organized based on specific functions or activities
-spec:
-  partOfDomain: domaintype:default/department

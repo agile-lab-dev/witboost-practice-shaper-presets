@@ -1,8 +1,0 @@
-apiVersion: witboost.com/v2
-kind: Taxonomy
-metadata:
-  name: machine-learning
-  displayName: Machine Learning
-  description: Entity representing the Machine Learning data landscape
-spec:
-  enabled: true
