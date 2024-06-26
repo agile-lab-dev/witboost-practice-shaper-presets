@@ -1,7 +1,7 @@
 apiVersion: witboost.com/v2
 kind: Taxonomy
 metadata:
-  name: data-mesh
+  name: data-mesh-taxonomy
   displayName: Data Mesh
   description: Entity representing the Data Mesh data landscape
 spec:
