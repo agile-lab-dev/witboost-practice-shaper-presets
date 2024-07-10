@@ -8,7 +8,7 @@ If you want to delve deeper into the Data Mesh, check the [AgileLab blog](https:
 ## Installation Guide
 
 From the Practice Shaper settings page, register the following entities in order.
-Refer to the [witboost documentation](https://docs.witboost.agilelab.it) to learn how to register a Practice Shaper entity in the **witboost catalog**.
+Refer to the [witboost documentation](https://docs.witboost.com) to learn how to register a Practice Shaper entity in the **witboost catalog**.
 
 | Name                                                       | Kind            | Description                                                                                                                                                                                                                                                                  |
 | ---------------------------------------------------------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

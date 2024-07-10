@@ -22,7 +22,7 @@ This enables data-oriented organizations to shape witboost based on their unique
 
 Thanks to the Practice Shaper, a company can approach any project scenario in data (**Data Landscape**), such as Data Mesh, Business Intelligence, Machine Learning and others, by defining which practices are enabled and regulated, with the possibility to define technological and methodological guardrails.
 
-Refer to the [witboost documentation](https://docs.witboost.agilelab.it) to learn more about Practice Shaper and Data Landscapes.
+Refer to the [witboost documentation](https://docs.witboost.com) to learn more about Practice Shaper and Data Landscapes.
 
 ## Property Graph
 
