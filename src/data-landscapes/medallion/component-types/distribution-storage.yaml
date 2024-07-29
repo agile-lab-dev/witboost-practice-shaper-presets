@@ -1,0 +1,11 @@
+apiVersion: witboost.com/v2
+kind: ComponentType
+metadata:
+  name: distributionstorage
+  displayName: Distribution Storage Folder
+  description: Infrastructure used to store and expose data ready for the consumption
+spec:
+  resourceTypeId: internadistributionstoragestorage
+  partOfSystem: systemtype:default/medallionproject
+  consumable: true
+  shoppable: true

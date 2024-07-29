@@ -1,0 +1,10 @@
+apiVersion: witboost.com/v2
+kind: SystemType
+metadata:
+  name: medallioningestion
+  displayName: Medallion Ingestion
+  description: Represent the full ingestion system of a medallion architecture
+spec:
+  resourceTypeId: medallioningestion
+  belongsTo: taxonomy:default/lakehouse-taxonomy
+  partOfDomain: domaintype:default/processing-layer

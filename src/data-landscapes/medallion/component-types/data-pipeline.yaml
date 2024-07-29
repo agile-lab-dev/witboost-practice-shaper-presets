@@ -1,0 +1,11 @@
+apiVersion: witboost.com/v2
+kind: ComponentType
+metadata:
+  name: datapipeline
+  displayName: Data Pipeline
+  description: Application business logic needed to move the data into the target layer of the medallion architecture
+spec:
+  resourceTypeId: datapipeline
+  partOfSystem: systemtype:default/medallionproject
+  consumable: false
+  shoppable: false

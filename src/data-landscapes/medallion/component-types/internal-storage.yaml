@@ -1,0 +1,11 @@
+apiVersion: witboost.com/v2
+kind: ComponentType
+metadata:
+  name: internallayerstorage
+  displayName: Internal Storage Folder
+  description: Infrastructure used to store and manage the data belonging to a data domain that is not going to be exposed
+spec:
+  resourceTypeId: internallayerstorage
+  partOfSystem: systemtype:default/medallionproject
+  consumable: true
+  shoppable: false

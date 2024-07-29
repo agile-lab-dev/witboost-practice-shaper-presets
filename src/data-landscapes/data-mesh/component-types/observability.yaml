@@ -1,0 +1,11 @@
+apiVersion: witboost.com/v2
+kind: ComponentType
+metadata:
+  name: observabilityport
+  displayName: Observability Api
+  pluralizedDisplayName: Observability Api
+spec:
+  resourceTypeId: observabilityport
+  partOfSystem: systemtype:default/dataproduct
+  consumable: true
+  shoppable: false

@@ -1,0 +1,8 @@
+apiVersion: witboost.com/v2
+kind: DomainType
+metadata:
+  name: data-domain
+  displayName: Data Domain
+  description: A data domain refers to a specific, logical grouping of data within an organization that pertains to a particular business area or function
+spec:
+  partOfDomain: domaintype:default/processing-layer

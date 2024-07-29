@@ -1,0 +1,10 @@
+apiVersion: witboost.com/v2
+kind: SystemType
+metadata:
+  name: medallionorchestration
+  displayName: Medallion Orchestration
+  description: An orchestration system to manage the entire medallion layer orchestration
+spec:
+  resourceTypeId: medallionorchestration
+  belongsTo: taxonomy:default/lakehouse-taxonomy
+  partOfDomain: domaintype:default/processing-layer

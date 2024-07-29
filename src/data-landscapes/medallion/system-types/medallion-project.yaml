@@ -1,0 +1,10 @@
+apiVersion: witboost.com/v2
+kind: SystemType
+metadata:
+  name: medallionproject
+  displayName: Medallion Project
+  description: A medallion project encapsulates processing and data capabilities to advance the process to the target level of the medallion architecture
+spec:
+  resourceTypeId: medallionproject
+  belongsTo: taxonomy:default/lakehouse-taxonomy
+  partOfDomain: domaintype:default/data-domain

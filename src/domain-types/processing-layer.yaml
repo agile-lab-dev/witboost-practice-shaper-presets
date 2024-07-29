@@ -1,0 +1,6 @@
+apiVersion: witboost.com/v2
+kind: DomainType
+metadata:
+  name: processing-layer
+  displayName: Processing Layer
+  description: A processing layer refers to the stage where raw data is transformed and processed to prepare it for downstream consumption

@@ -1,0 +1,11 @@
+apiVersion: witboost.com/v2
+kind: ComponentType
+metadata:
+  name: discoveryport
+  displayName: Discovery Port
+  pluralizedDisplayName: Discovery Port
+spec:
+  resourceTypeId: discoveryport
+  partOfSystem: systemtype:default/dataproduct
+  consumable: true
+  shoppable: false

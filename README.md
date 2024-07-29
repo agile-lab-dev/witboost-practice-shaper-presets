@@ -44,9 +44,10 @@ A sample Practice Shaper graph composed of data landscapes, domain types, system
 
 ## Presets
 
-| Data Landscape | Description                                                                                                                                                                                                                                                                                                                           | Installation guide                                           |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
-| Data Mesh      | The Data Mesh is a decentralized approach to data architecture that emphasizes domain-oriented ownership, self-serve data infrastructure, and treating data as a product. It shifts the responsibility for data management and governance from a centralized data team to the various business domains that generate and use the data | [Go to the guide](./src/data-landscapes/data-mesh/README.md) |
+| Data Landscape      | Description                                                                                                                                                                                                                                                                                                                           | Installation guide                                           |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| Data Mesh           | The Data Mesh is a decentralized approach to data architecture that emphasizes domain-oriented ownership, self-serve data infrastructure, and treating data as a product. It shifts the responsibility for data management and governance from a centralized data team to the various business domains that generate and use the data | [Go to the guide](./src/data-landscapes/data-mesh/README.md) |
+| Lakehouse Medallion | Lakehouse data landscape                                                                                                                                                                                                                                                                                                              | [Go to](./src/data-landscapes/medallion)                     |
 
 ## License
 
@@ -64,6 +65,7 @@ From Chaos to Control: Data Experience on Guardrails
 Craft your own standards and automate your data practice
 
 [Contact us](https://witboost.com/contact-us) or follow us on:
+
 - [LinkedIn](https://www.linkedin.com/showcase/witboost/)
 - [Instagram](https://www.instagram.com/agilelab_official/)
 - [YouTube](https://www.youtube.com/channel/UCTWdhr7_4JmZIpZFhMdLzAA)
