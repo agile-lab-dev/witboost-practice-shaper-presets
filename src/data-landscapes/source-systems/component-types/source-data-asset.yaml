@@ -1,0 +1,11 @@
+apiVersion: witboost.com/v2
+kind: ComponentType
+metadata:
+  name: sourcedataasset
+  displayName: Source Data Asset
+  pluralizedDisplayName: Source Data Assets
+spec:
+  resourceTypeId: sourcedataasset
+  partOfSystem: systemtype:default/sourcesystem
+  consumable: true
+  shoppable: false

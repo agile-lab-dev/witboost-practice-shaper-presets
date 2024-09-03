@@ -1,0 +1,10 @@
+apiVersion: witboost.com/v2
+kind: SystemType
+metadata:
+  name: sourcesystem
+  displayName: Source System
+  description: A source system is a an operational application axposing data assets
+spec:
+  resourceTypeId: sourcesystem
+  belongsTo: taxonomy:default/source-systems-taxonomy
+  partOfDomain: domaintype:default/data-domain
