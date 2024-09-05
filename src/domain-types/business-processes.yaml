@@ -1,0 +1,8 @@
+apiVersion: witboost.com/v2
+kind: DomainType
+metadata:
+  name: business-process
+  displayName: Business Process
+  description: Is a set of structured activities or tasks that are performed in a sequence to achieve a specific organizational goal or deliver a product or service to customers
+spec:
+  partOfDomain: domaintype:default/business-process
