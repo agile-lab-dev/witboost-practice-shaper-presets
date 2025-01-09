@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: datamesh-taxonomy-locations
+  description: A collection of all locations for registering a Data Mesh Taxonomy only via API
+spec:
+  targets:
+    - ../../domain-types/business-domain.yaml
+    - ./catalog-info.yaml
+    - ./system-types/data-product.yaml
+    - ./component-types/storage.yaml
+    - ./component-types/outputport.yaml
+    - ./component-types/workload.yaml

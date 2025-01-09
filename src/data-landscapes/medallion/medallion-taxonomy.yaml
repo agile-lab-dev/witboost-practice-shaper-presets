@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: lakehouse-taxonomy-locations
+  description: A collection of all locations for registering a Lakehouse (Medallion) Taxonomy only via API
+spec:
+  targets:
+    - ./catalog-info.yaml
+    - ../../domain-types/data-domain.yaml
+    - ../../domain-types/processing-layer.yaml
+    - ./system-types/medallion-ingestion.yaml
+    - ./system-types/medallion-orchestration.yaml
+    - ./system-types/medallion-project.yaml
+    - ./component-types/data-pipeline.yaml
+    - ./component-types/distribution-storage.yaml
+    - ./component-types/internal-storage.yaml
