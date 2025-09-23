@@ -1,0 +1,217 @@
+apiVersion: witboost.com/v1
+kind: SystemPrototypeTemplate
+metadata:
+  name: dataproduct-prototype-template
+  title: Data Product Prototype
+  description: Template definition of a Data Product Prototype
+  mesh:
+    icon: https://cdn-icons-png.flaticon.com/512/589/589598.png
+  tags:
+    - data-product-prototype
+spec:
+  owner: agilelab
+  type: dataproductprototype
+  parameters:
+    - title: Value Proposition
+      required:
+        - name
+        - owner
+        - systemPrototypeType
+        - domain
+      properties:
+        name:
+          title: Name
+          type: string
+          description: Unique name of the component
+        owner:
+          title: Owner
+          type: string
+          description: Owner of the component
+          ui:field: OwnerPicker
+          ui:options:
+            allowedKinds:
+              - User
+        systemPrototypeType:
+          title: System Prototype Type
+          type: string
+          description: The system prototype type this component belongs to
+          ui:field: EntityPicker
+          ui:disabled: true
+          ui:options:
+            allowedKinds:
+              - SystemPrototypeType
+        domain:
+          title: Domain
+          type: string
+          description: The domain this component belongs to
+          ui:field: EntityPicker
+          ui:options:
+            allowArbitraryValues: false
+            allowedKinds:
+              - Domain
+        description:
+          title: Description
+          type: string
+          description: A description for this component
+        purpose:
+          title: Purpose
+          type: string
+          description: The main purpose or intended usage of this component
+        keyResults:
+          title: Key Results
+          type: array
+          default: []
+          description: Add key results
+          ui:field: CustomUrlPicker
+          ui:options:
+            allowArbitraryValues: false
+            selectedField: name
+          ui:fieldsToSave:
+            - id
+            - name
+            - description
+          ui:displayFields:
+            - name
+            - description
+          ui:apiSpec:
+            retrieval:
+              baseUrl: "{{CURRENT_HOST}}"
+              path: "/system_prototype/key_results/search"
+              method: POST
+              params:
+                offset: 0
+                limit: 100
+    - title: Product Discovery
+      properties:
+        expectedUsage:
+          title: Expected Usage
+          type: string
+        desiredTimeToMarket:
+          title: Desired Time to Market
+          type: string
+        importance:
+          title: Importance
+          type: string
+        poc:
+          title: POC
+          type: string
+        feasibility:
+          title: Feasibility
+          type: string
+        desirability:
+          title: Desirability
+          type: string
+        blockers:
+          title: Blockers
+          type: string
+        preConditions:
+          title: Pre-Conditions
+          type: string
+        successMetrics:
+          title: Success Metrics
+          type: array
+          default: []
+          description: Add success metrics
+          ui:field: CustomUrlPicker
+          ui:options:
+            allowArbitraryValues: false
+            selectedField: name
+          ui:fieldsToSave:
+            - id
+            - name
+            - description
+          ui:displayFields:
+            - name
+            - description
+          ui:apiSpec:
+            retrieval:
+              baseUrl: "{{CURRENT_HOST}}"
+              path: "/system_prototype/success_metrics/search"
+              method: POST
+              params:
+                offset: 0
+                limit: 100
+        blueprint:
+          title: Blueprint
+          type: string
+          description: Select a blueprint
+          ui:field: EntityPicker
+          ui:options:
+            allowedKinds:
+              - Blueprint
+
+    - title: Information Prototyping
+      properties:
+        dataSources:
+          title: Data Sources
+          description: Select data sources from available Data Products
+          ui:field: EntitySearchPicker
+          ui:options:
+            multiSelection: true
+            entities:
+              - type: System
+                displayName: Systems
+                displayField: '{{spec.mesh.name}}'
+                returnField: ref
+                userFilters:
+                  - type
+                  - domain
+                columns:
+                  - name: name
+                    value: name
+                  - name: tags
+                    path: '{% for tag in spec.mesh.tags %}{{tag.tagFQN}}{{", " if not loop.last }}{% endfor %}'
+        businessConcepts:
+          title: Business Concepts
+          type: array
+          default: []
+          description: Add business concepts
+          ui:field: CustomUrlPicker
+          ui:options:
+            allowArbitraryValues: false
+            selectedField: name
+          ui:fieldsToSave:
+            - id
+            - name
+            - domain
+            - description
+          ui:displayFields:
+            - name
+            - domain
+            - description
+          ui:apiSpec:
+            retrieval:
+              baseUrl: "{{CURRENT_HOST}}"
+              path: "/system_prototype/business_concepts/search"
+              method: POST
+              params:
+                offset: 0
+                limit: 100
+
+    - title: Cost Estimation
+      properties:
+        costEstimationCapex:
+          title: Cost Estimation CAPEX
+          type: number
+          description: "Cost Estimation CAPEX in €"
+        monthlyITResourcesCost:
+          title: Monthly IT Resources Cost
+          type: number
+          description: "Monthly IT Resources Cost in €"
+        monthlyMaintenanceEffort:
+          title: Monthly Maintenance Effort
+          type: number
+          description: "Monthly Maintenance Effort in €"
+
+  steps:
+    - id: edit
+      name: Edit Prototype
+      action: edit:prototype
+
+  output:
+    links:
+      - title: Repository
+        url: ${{ steps.publish.output.remoteUrl }}
+      - title: Open in Backlog
+        icon: backlog
+        entityRef: ${{ steps.register.output.entityRef }}

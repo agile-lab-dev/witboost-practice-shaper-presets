@@ -1,0 +1,10 @@
+apiVersion: witboost.com/v2
+kind: SystemPrototypeType
+metadata:
+  name: dataproductprototype
+  displayName: Data Product Prototype
+  description: A Data Product Prototype
+spec:
+  resourceTypeId: dataproductprototype
+  template: systemprototypetemplate:default/dataproduct-prototype-template
+  evolvesInto: systemtype:default/dataproduct
