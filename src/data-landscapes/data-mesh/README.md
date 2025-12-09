@@ -23,3 +23,5 @@ Refer to the [Witboost documentation](https://docs.witboost.com) to learn how to
 | [Data Product Prototype Template](./system-prototype-template/template.yaml) | `SystemPrototypeTemplate` | Template definition for creating Data Product Prototypes with configurable parameters and properties                                                                                                                                                                         |
 
 If you desire to register the whole Data Landscape using a single file, you can register the `data-mesh-landscape.yaml` via the Witboost Catalog API, or by adding it as part of a first installation to the Location Register Startup Action. Refer to the [Witboost documentation](https://docs.witboost.com) for more information.
+
+> **Warning:** Some of the Practice Shaper entities included in the single-file preset (`data-mesh-landscape.yaml`) may take a few refresh cycles to register correctly. Don't worry if they appear in an error state temporarily, this is expected.
