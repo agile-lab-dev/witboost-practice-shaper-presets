@@ -1,0 +1,10 @@
+apiVersion: witboost.com/v2
+kind: SystemType
+metadata:
+  name: business-ontology
+  displayName: Business Ontology
+  description: Container of a subset of the Business Ontology
+spec:
+  resourceTypeId: business-ontology
+  belongsTo: taxonomy:default/businessontologies
+  partOfDomain: domaintype:default/business-domain

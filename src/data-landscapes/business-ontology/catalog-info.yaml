@@ -1,0 +1,8 @@
+apiVersion: witboost.com/v2
+kind: Taxonomy
+metadata:
+  name: businessontologies
+  displayName: Business Ontologies
+  description: Represents the definition of all the business ontology in the company
+spec:
+  enabled: true
